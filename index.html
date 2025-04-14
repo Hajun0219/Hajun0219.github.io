@@ -24,9 +24,8 @@
                 <p class="name" style="text-align: center;">
                   Hyunyoung Jung
                 </p>
-                <p>I am a second-year Master's student at <a href="https://www.gatech.edu/">Georgia Institute of Technology</a>, majoring in Electrical and Computer Engineering.                
-                  I am currently being advised by <a href="https://faculty.cc.gatech.edu/~sha9/">Dr. Sehoon Ha</a> and closely working with <a href="https://www.dynamicrobot.kaist.ac.kr/">Dr. Hae-Won Park</a>. <br><br>
-                  I received my Bachelor's degree at <a href="https://www.snu.ac.kr/index.html"> Seoul National University</a> where I majored in Mechanical Engineering and Computer Science and Engineering.
+                <p>I am a first-year Ph.D. student in Robotics at <a href="https://www.gatech.edu/">Georgia Tech</a>, advised by <a href="https://faculty.cc.gatech.edu/~sha9/">Dr. Sehoon Ha</a> and working closely with <a href="https://www.dynamicrobot.kaist.ac.kr/">Dr. Hae-Won Park</a>.
+                  Before my Ph.D., I received my Master's degree in Electrical and Computer Engineering from Georgia Tech and Bachelor's degree in Mechanical Engineering and Computer Science and Engineering at <a href="https://www.snu.ac.kr/index.html"> Seoul National University</a>.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:hjung331@gatech.edu">Email</a> &nbsp;/&nbsp;
@@ -34,6 +33,7 @@
                   <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
                   <a href="https://scholar.google.com/citations?user=xR0ESPUAAAAJ&hl=ko&citsig=AD-1fHZJa2SAuKKkTInL3DjXIfy9">Google Scholar</a> &nbsp;/&nbsp;
                   <a href="https://twitter.com/HyunyoungJung5">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/hyunyoung-jung">Linkedin</a> &nbsp;/&nbsp;
                   <a href="https://github.com/HyunyoungJung/">Github</a>
                 </p>
               </td>
@@ -50,10 +50,10 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  My research goal is to develop learning-based control algorithms that enable robust and agile locomotion and interactive behaviors within human environments. 
-                  For this, I am currently working on research in legged robot locomotion, employing an approach that integrates classical control and learning-based methods.
-                  I believe this approach can complement the drawbacks of each method by reducing the burden of reward engineering and improving the performance of the model-based method.  
-                  Furthermore, I am exploring the possibilities of human motion-driven control by establishing correspondence between humans and robots.
+                  My research goal is to develop learning-based control algorithms that enable robust, agile locomotion and interactive behaviors in human-centered environments. 
+                  For this, I am currently working on legged robot locomotion—particularly humanoids—through an approach that integrates classical control with learning-based methods.
+                  <!-- I believe this approach can complement the drawbacks of each method by reducing the burden of reward engineering and improving the performance of the model-based method.   -->
+                  <!-- Furthermore, I am exploring the possibilities of human motion-driven control by establishing correspondence between humans and robots. -->
                   <!-- Representative papers are <span class="highlight">highlighted</span>. -->
                 </p>
               </td>
@@ -71,7 +71,53 @@
           </table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:-20px"><tbody>
-            
+            <tr onmouseout="preci_stop()" onmouseover="preci_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <div class="two" id='preci_image'><video  width=100% height=100% muted autoplay loop>
+                  <source src="project_teasers/preci/teaser.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='project_teasers/preci/teaser.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function preci_start() {
+                    document.getElementById('preci_image').style.opacity = "1";
+                  }
+      
+                  function preci_stop() {
+                    document.getElementById('preci_image').style.opacity = "0";
+                  }
+                  preci_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                <a href="index.html">
+                  <span class="papertitle">PreCi: Pre-training and Continual Improvement of Humanoid Locomotion via Model-Assumption-based Regularization</span>
+                </a>
+                <br>
+                <strong>Hyunyoung Jung*</strong>,
+                <a href="https://guzhaoyuan.com/">Zhaoyuan Gu*</a>,
+                <a href="https://www.me.gatech.edu/faculty/zhao">Ye Zhao</a>, 
+                <a href="https://www.dynamicrobot.kaist.ac.kr/">Hae-Won Park</a>,
+                <a href="https://faculty.cc.gatech.edu/~sha9/">Sehoon Ha</a>
+                <br>
+                <em>Under Review</em>, 2024
+                <br>
+                <!-- <a href="projects/preci/preci.html">project page</a>
+                / -->
+                <a href="https://youtu.be/SqROsQW3wvo">video</a>
+                <!-- / -->
+                <!-- <a href="https://arxiv.org/abs/2309.17046">arXiv</a> -->
+                /
+                <a href="projects/preci/IFM_Digit_arxiv.pdf">Paper</a>
+                <p></p>
+                <p>
+                  We introduce a learning framework for effectively training a humanoid locomotion policy that imitates the behavior of a model-based controller while extending its capabilities to handle more complex locomotion tasks.
+                </p>
+              </td>
+            </tr>
+                        
             <tr onmouseout="crossloco_stop()" onmouseover="crossloco_start()">
               <td style="padding:20px;width:25%;vertical-align:top">
                 <div class="one">
@@ -111,7 +157,7 @@
                 /
                 <a href="https://arxiv.org/abs/2309.17046">arXiv</a>
                 /
-                <a href="https://openreview.net/pdf?id=UCfz492fM8">Paper</a>
+                <a href="https://openreview.net/pdf?id=UCfz492fM8">paper</a>
                 <p></p>
                 <p>
                   We introduce a guided unsupervised reinforcement learning framework that simultaneously learns robot skills and their correspondence to human motions.
@@ -169,7 +215,7 @@
 
           </tbody></table>
 
-          <table>
+          <!-- <table>
             <tbody>
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle; line-height:10px">
@@ -213,7 +259,7 @@
               </td>
             </tr>
             </tbody>
-            </table>
+            </table> -->
 
           <table>
             <tbody>
@@ -229,10 +275,20 @@
             <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
               <td style="padding:0px 10px 20px 23px;vertical-align:top">
                 <h3 style="line-height: 0.5;" > Georgia Institute of Technology </h3>
+                <em>Ph.D. in Robotics</em>
+              </td>
+              <td style="padding:10px;width:35%;vertical-align:top">
+                <em>Aug. 2024 - Present</em>
+              </td>
+            </tr>
+
+            <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
+              <td style="padding:0px 10px 20px 23px;vertical-align:top">
+                <h3 style="line-height: 0.5;" > Georgia Institute of Technology </h3>
                 <em>M.S in Electrical and Computer Engineering</em>
               </td>
               <td style="padding:10px;width:35%;vertical-align:top">
-                <em>Aug. 2022 - Present</em>
+                <em>Aug. 2022 - May. 2024</em>
               </td>
             </tr>
       
