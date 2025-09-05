@@ -142,10 +142,30 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
+      <video id="teaser" autoplay muted playsinline loop preload="auto" height="100%">
+        <source src="./static/videos/teaser.mp4" type="video/mp4">
       </video>
+      <script>
+        (function () {
+          const v = document.getElementById('teaser');
+          if (!v) return;
+
+          // Ensure policies are satisfied and try to play once ready.
+          v.muted = true;
+          const tryPlay = () => {
+            v.play().catch(() => {
+              // If the browser refuses autoplay, show controls so the user can start it.
+              v.setAttribute('controls', '');
+            });
+          };
+
+          if (v.readyState >= 2) { // HAVE_CURRENT_DATA
+            tryPlay();
+          } else {
+            v.addEventListener('loadeddata', tryPlay, { once: true });
+          }
+        })();
+      </script>
     </div>
   </div>
 </section>
