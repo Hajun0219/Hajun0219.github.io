@@ -121,7 +121,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://youtu.be/KmL7mlGBkys"
+                <a href="https://youtu.be/xwyAuPgVbeA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -142,7 +142,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted playsinline loop preload="auto" height="100%">
+      <video id="teaser" autoplay muted playsinline webkit-playsinline loop preload="auto"
+        style="width:100%;height:auto;max-height:70vh;display:block"
+        poster="data:image/gif;base64,R0lGODlhAQABAAAAACw=">
         <source src="./static/videos/teaser.mp4" type="video/mp4">
       </video>
       <script>
@@ -150,20 +152,45 @@
           const v = document.getElementById('teaser');
           if (!v) return;
 
-          // Ensure policies are satisfied and try to play once ready.
+          v.defaultMuted = true;
           v.muted = true;
-          const tryPlay = () => {
-            v.play().catch(() => {
-              // If the browser refuses autoplay, show controls so the user can start it.
-              v.setAttribute('controls', '');
-            });
+          v.autoplay = true;
+          v.setAttribute('muted', '');
+          v.setAttribute('playsinline', '');
+          v.setAttribute('webkit-playsinline', '');
+
+          const tryPlay = () =>
+            v.play().catch(() => v.setAttribute('controls', ''));
+
+          // Retry a few times while the layout/buffer settles.
+          let attempts = 0;
+          const tick = () => {
+            if (v.readyState >= 2) {           // HAVE_CURRENT_DATA
+              tryPlay();
+            } else if (attempts++ < 15) {
+              setTimeout(tick, 150);
+            } else {
+              v.setAttribute('controls', '');  // graceful fallback
+            }
           };
 
-          if (v.readyState >= 2) { // HAVE_CURRENT_DATA
-            tryPlay();
-          } else {
-            v.addEventListener('loadeddata', tryPlay, { once: true });
-          }
+          // Kick a fresh load to avoid stale initial state.
+          v.load();
+          // Fire at multiple readiness milestones (different browsers fire different ones first).
+          ['loadedmetadata','loadeddata','canplay','canplaythrough'].forEach(evt =>
+            v.addEventListener(evt, tryPlay, { once: true })
+          );
+          // Also run our small retry loop.
+          tick();
+
+          // Last-ditch fallback: first user gesture starts it.
+          const onInteract = () => { tryPlay(); window.removeEventListener('pointerdown', onInteract); };
+          window.addEventListener('pointerdown', onInteract, { once: true });
+
+          // If the tab was backgrounded at first paint, try again when visible.
+          document.addEventListener('visibilitychange', () => {
+            if (!document.hidden && v.paused) tryPlay();
+          });
         })();
       </script>
     </div>
