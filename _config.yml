@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Hajun Kim"
   pronouns         : # example: "she/her"  
-  bio              : "Robotics Researcher | Legged Robots, State Estimation, and Perceptionr"
+  bio              : "Robotics Researcher | Legged Robots, State Estimation and Perception."
   location         : "South Korea"
   employer         : "Korea Advanced Institute of Science & Technology (KAIST)"
   uri              : # URL
@@ -36,11 +36,11 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=FKqrQUwAAAAJ&hl=en"
 
   # Repositories and software development
-  github           : "https://github.com/Hajun0219"
+  github           : "Hajun0219"
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -49,7 +49,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/hajun-kim-586b77331/"# Username
+  linkedin         : "hajun-kim-586b77331"# Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
