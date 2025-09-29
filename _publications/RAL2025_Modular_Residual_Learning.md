@@ -4,5 +4,5 @@ collection: publications
 category: manuscripts
 date: 2025-07-23
 venue: 'IEEE ROBOTICS AND AUTOMATION LETTERS'
-paperurl: 'http://Hajun0219.github.io/files/A_Modular_Residual_Learning_Framework_to_Enhance_Model_Based_Approach_for_Robust_Locomotion.pdf'
+paperurl: 'http://Hajun0219.github.io/files/A Modular Residual Learning Framework to Enhance Model-Based Approach for Robust Locomotion.pdf'
 ---
