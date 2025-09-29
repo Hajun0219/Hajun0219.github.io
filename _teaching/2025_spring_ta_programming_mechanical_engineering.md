@@ -1,7 +1,7 @@
 ---
-title: "Teaching Assistant"
+title: "Programming for Mechanical Engineering Problem Solving, Spring Semester"
 collection: teaching
-type: "Programming for Mechanical Engineering Problem Solving, Spring Semester"
+type: "Undergraduate course"
 venue: "Mechanical Engineering, KAIST"
-date: 2025
+date: 2025-03-02
 ---
