@@ -1,7 +1,7 @@
 ---
-title: "Teaching Assistant"
+title: "Teaching Assistant for Programming for Mechanical Engineering Problem Solving, Fall Semester"
 collection: teaching
-type: "Programming for Mechanical Engineering Problem Solving, Fall Semester"
+type: "Graduate course"
 venue: "Mechanical Engineering, KAIST"
-date: 2024
+date: 2024-09-01
 ---
