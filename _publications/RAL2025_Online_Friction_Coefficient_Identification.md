@@ -3,8 +3,7 @@ title: "Online Friction Coefficient Identification for Legged Robots on Slippery
 collection: publications
 category: manuscripts
 date: 2025-01-26
-venue: 'IEEE ROBOTICS AND AUTOMATION LETTERSs'
-excerpt: 'This paper is a first-author work on online friction coefficient identification, addressing the issue of uninformative gradients in nonsmooth contact dynamics.'
+venue: 'IEEE ROBOTICS AND AUTOMATION LETTERS'
 paperurl: 'http://Hajun0219.github.io/files/Online Friction Coefficient Identification for Legged Robots on Slippery Terrain Using Smoothed Contact Gradients.pdf'
 ---
 
