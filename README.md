@@ -1,2 +1,2 @@
-# HyunyoungJung.github.io
-Hyunyoung's official homepage
+# HajunKim.github.io
+Hajun's official homepage
