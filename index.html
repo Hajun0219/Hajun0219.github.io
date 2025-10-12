@@ -3,9 +3,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Hyunyoung Jung</title>
+    <title>Hajun Kim</title>
 
-    <meta name="author" content="Hyunyoung Jung">
+    <meta name="author" content="Hajun Kim">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -22,26 +22,29 @@
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
-                  Hyunyoung Jung
+                  Hajun Kim
                 </p>
-                <p>I am a second-year Ph.D. student in Robotics at <a href="https://www.gatech.edu/">Georgia Tech</a>, advised by <a href="https://faculty.cc.gatech.edu/~sha9/">Dr. Sehoon Ha</a> and working closely with <a href="https://www.dynamicrobot.kaist.ac.kr/">Dr. Hae-Won Park</a>.
-                  Before my Ph.D., I received my Master's degree in Electrical and Computer Engineering from Georgia Tech and Bachelor's degree in Mechanical Engineering and Computer Science and Engineering at <a href="https://www.snu.ac.kr/index.html"> Seoul National University</a>.
+                <p>I am a fourth-year Ph.D. student in Robotics at <a href="https://dynamicrobot.kaist.ac.kr/">Korea Advanced Institute of Science and Technology </a>, advised by <a href="https://scholar.google.com/citations?user=q7v_ewQAAAAJ&hl=en">Dr. Hae-Won Park</a>.
+                  Before my Ph.D., I received my Master's degree in Mechanical Engineering from Korea Advanced Institute of Science and Technology and Bachelor's degree in Mechanical Engineering at <a href="https://www.yonsei.ac.kr/sites/en_sc/index.do"> Yonsei University</a>.
+                  
+                  I am a robotics researcher with a particular focus on legged robots. My current research interests include state estimation, perception, and control.
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:hjung331@gatech.edu">Email</a> &nbsp;/&nbsp;
+                  <a href="mailto:hajun0219@kaist.ac.kr">Email</a> &nbsp;/&nbsp;
                   <!-- <a href="cv.pdf">CV</a> &nbsp;/&nbsp; -->
                   <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
-                  <a href="https://scholar.google.com/citations?user=xR0ESPUAAAAJ&hl=ko&citsig=AD-1fHZJa2SAuKKkTInL3DjXIfy9">Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://twitter.com/HyunyoungJung5">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/hyunyoung-jung">Linkedin</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/HyunyoungJung/">Github</a>
+                  <a href="https://scholar.google.com/citations?user=FKqrQUwAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/HajunKim96_">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/hajun-kim/">Linkedin</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/Hajun0219">Github</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/Hajun0219/CV/blob/main/cv.pdf">CV</a>
                 </p>
               </td>
               <!-- <td style="padding:2.5%;width:40%;max-width:40%">
                 <a href="images/hyunyoung.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/hyunyoung.jpg" class="profile-photo"></a>
               </td> -->
               <td style="padding: 20px 20px 20px 0px; width: 25%;">
-                <img class="profile-photo" alt="profile photo" src="images/hyunyoung.jpg">
+                <img class="profile-photo" alt="profile photo" src="images/hajun.JPG">
             </td>
             </tr>
           </tbody></table>
@@ -50,7 +53,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  My research goal is to develop learning-based control algorithms that enable robust, agile and interactive behaviors in human-centered environments. I have worked on combining model-based control and learning based approach for legged locomotion including quadrupeds and humanoids.
+                  My research goal is to develop a robust and accurate multi-sensor fusion algorithm for estimating the physical state of a legged robot, enabling it to navigate diverse environments and conditions. Currently, I am working on improving model-based state estimation by leveraging the advantages of Lie groups. In addition, I am also interested in control and perception algorithms for legged robots.
                   <!-- I believe this approach can complement the drawbacks of each method by reducing the burden of reward engineering and improving the performance of the model-based method.   -->
                   <!-- Furthermore, I am exploring the possibilities of human motion-driven control by establishing correspondence between humans and robots. -->
                   <!-- Representative papers are <span class="highlight">highlighted</span>. -->
@@ -70,147 +73,225 @@
           </table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:-20px"><tbody>
-            <tr onmouseout="ppf_stop()" onmouseover="ppf_start()">
+            <tr onmouseout="friction_stop()" onmouseover="friction_start()">
               <td style="padding:20px;width:25%;vertical-align:top">
                 <div class="one">
-                  <div class="two" id='ppf_image'><video  width=100% height=100% muted autoplay loop>
-                  <source src="project_teasers/ppf/teaser.mp4" type="video/mp4">
+                  <div class="two" id='friction_image'><video  width=100% height=100% muted autoplay loop>
+                  <source src="project_teasers/1_friction/teaser.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video></div>
-                  <img src='project_teasers/ppf/teaser.png' width="160">
+                  <img src='project_teasers/1_friction/teaser.png' width="160">
                 </div>
                 <script type="text/javascript">
-                  function ppf_start() {
-                    document.getElementById('ppf_image').style.opacity = "1";
+                  function friction_start() {
+                    document.getElementById('friction_image').style.opacity = "1";
                   }
       
-                  function ppf_stop() {
-                    document.getElementById('ppf_image').style.opacity = "0";
+                  function friction_stop() {
+                    document.getElementById('friction_image').style.opacity = "0";
                   }
-                  ppf_stop()
+                  friction_stop()
                 </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top">
-                <a href="projects/ppf/ppf.html">
-                  <span class="papertitle">PPF: Pre-training and Preservative Fine-tuning of Humanoid Locomotion via Model-Assumption-based Regularization</span>
-                </a>
+                  <span class="papertitle">Online Friction Coefficient Identification for Legged Robots on Slippery Terrain Using Smoothed Contact Gradients</span>
                 <br>
-                <strong>Hyunyoung Jung*</strong>,
-                <a href="https://guzhaoyuan.com/">Zhaoyuan Gu*</a>,
-                <a href="https://www.me.gatech.edu/faculty/zhao">Ye Zhao</a>, 
-                <a href="https://www.dynamicrobot.kaist.ac.kr/">Hae-Won Park</a>,
-                <a href="https://faculty.cc.gatech.edu/~sha9/">Sehoon Ha</a>
+                <strong>Hajun Kim</strong>,
+                Dongyun Kang,
+                Min-Gyu Kim, 
+                Gijeong Kim,
+                <a href="https://scholar.google.com/citations?user=q7v_ewQAAAAJ&hl=en&oi=ao">Hae-Won Park</a>
                 <br>
-                <em>RA-L</em>, 2025, to be updated.
+                <em>IEEE Robotics and Automation Letters</em>, 2025.
                 <br>
-                <a href="projects/ppf/ppf.html">project page</a>
+                <a href="https://www.youtube.com/watch?v=3nA2nxnjixA&t=47s">video</a>
                 /
-                <a href="https://youtu.be/xwyAuPgVbeA">video</a>
-                /
-                <a href="https://arxiv.org/abs/2504.09833">arXiv</a>
+                <a href="https://arxiv.org/html/2502.16843v1">arXiv</a>
                 <!-- / -->
                 <!-- <a href="projects/ppf/IFM_Digit_arxiv.pdf">Paper</a> -->
                 <p></p>
                 <p>
-                  We introduce a learning framework for effectively training a humanoid locomotion policy that imitates the behavior of a model-based controller while extending its capabilities to handle more complex locomotion tasks.
+                  We introduce a online friction coefficient identification framework for legged robot, which addresses the uninformative gradient issues. Due to the nature of nonsmooth condition of contact dynamics, the uninformative gradient can lead to stalling at the local optima. To address this issue, this work proposes analytic smoothed gradients of contact dynamics and verifies the framework using KAIST HOUND.
+                </p>
+              </td>
+            </tr>
+
+
+            <tr onmouseout="LIS_stop()" onmouseover="LIS_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <div class="two" id='LIS_image'><video  width=100% height=100% muted autoplay loop>
+                  <source src="project_teasers/2_LIS/teaser.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='project_teasers/2_LIS/teaser.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function LIS_start() {
+                    document.getElementById('LIS_image').style.opacity = "1";
+                  }
+      
+                  function LIS_stop() {
+                    document.getElementById('LIS_image').style.opacity = "0";
+                  }
+                  LIS_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                  <span class="papertitle">Multi-Sensor Fusion for Quadruped Robot State Estimation Using Invariant Filtering and Smoothing</span>
+                <br>
+                <strong>Hajun Kim*</strong>,
+                <a href="https://scholar.google.com/citations?user=6JUhUywAAAAJ&hl=it">Ylenia Nisticò*</a>,
+                João Carlos Virgolino Soares, 
+                Geoff Fink,
+                <a href="https://scholar.google.com/citations?user=q7v_ewQAAAAJ&hl=en&oi=ao">Hae-Won Park</a>,
+                <a href="https://scholar.google.com/citations?user=7mC_6w0AAAAJ&hl=en">Claudio Semini</a>
+                <br>
+                <em>IEEE Robotics and Automation Letters</em>, 2025.
+                <br>
+                <a href="https://www.youtube.com/watch?v=V5HsLWdHdXI">video</a>
+                /
+                <a href="https://arxiv.org/abs/2504.20615">arXiv</a>
+                <!-- / -->
+                <!-- <a href="projects/ppf/IFM_Digit_arxiv.pdf">Paper</a> -->
+                <p></p>
+                <p>
+                  We introduce a multi-sensor fusion framework for legged robot, built on the Invariant Extended Kalman Filter (InEKF) and Invariant Smoother (IS). The proposed methods, named E-InEKF and E-IS, fuses kinematics, IMU, LiDAR, and GPS data to mitigate the position drift, particularly along the z-axis, a common issue in proprioceptive-based approaches. This work derives the observation model that satisfy group-affine property to integrate the LiDAR odometry and GPS into InEKF and IS. We verify the proposed methods in indoor and outdoor experiments using KAIST HOUND2.
                 </p>
               </td>
             </tr>
                         
-            <tr onmouseout="crossloco_stop()" onmouseover="crossloco_start()">
+                        
+                                    <tr onmouseout="modular_stop()" onmouseover="modular_start()">
               <td style="padding:20px;width:25%;vertical-align:top">
                 <div class="one">
-                  <div class="two" id='crossloco_image'><video  width=100% height=100% muted autoplay loop>
-                  <source src="project_teasers/crossloco/teaser.mp4" type="video/mp4">
+                  <div class="two" id='modular_image'><video  width=100% height=100% muted autoplay loop>
+                  <source src="project_teasers/3_modular/teaser.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video></div>
-                  <img src='project_teasers/crossloco/teaser.png' width="160">
+                  <img src='project_teasers/3_modular/teaser.png' width="160">
                 </div>
                 <script type="text/javascript">
-                  function crossloco_start() {
-                    document.getElementById('crossloco_image').style.opacity = "1";
+                  function modular_start() {
+                    document.getElementById('modular_image').style.opacity = "1";
                   }
       
-                  function crossloco_stop() {
-                    document.getElementById('crossloco_image').style.opacity = "0";
+                  function modular_stop() {
+                    document.getElementById('modular_image').style.opacity = "0";
                   }
-                  crossloco_stop()
+                  modular_stop()
                 </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top">
-                <a href="projects/crossloco/crossloco.html">
-                  <span class="papertitle">CrossLoco: Human Motion Driven Control of Legged Robots via Guided Unsupervised Reinforcement Learning</span>
-                </a>
+                  <span class="papertitle">A modular residual learning framework to enhance model-based approach for robust locomotion</span>
                 <br>
-                <a href="https://easypapersniper.github.io/">Tianyu Li</a>,
-                <strong>Hyunyoung Jung</strong>,          
-                <a href="https://sites.gatech.edu/matthew-gombolay/">Matthew Gombolay</a>, 
-                <a href="https://ce.gatech.edu/directory/person/yong-kwon-cho">Yong Kwon Cho</a>,
-                <a href="https://faculty.cc.gatech.edu/~sha9/">Sehoon Ha</a>
+                Min-Gyu Kim,
+                Dongyun Kang,
+                <strong>Hajun Kim</strong>, 
+                <a href="https://scholar.google.com/citations?user=q7v_ewQAAAAJ&hl=en&oi=ao">Hae-Won Park</a>
                 <br>
-                <em>ICLR</em>, 2024
+                <em>IEEE Robotics and Automation Letters</em>, 2025.
                 <br>
-                <a href="projects/crossloco/crossloco.html">project page</a>
+                <a href="https://www.youtube.com/watch?v=zYmf5ERsJfc">video</a>
                 /
-                <a href="https://youtu.be/dBM2sTUcO-I">video</a>
-                /
-                <a href="https://arxiv.org/abs/2309.17046">arXiv</a>
-                /
-                <a href="https://openreview.net/pdf?id=UCfz492fM8">paper</a>
+                <a href="https://arxiv.org/abs/2507.18138">arXiv</a>
+                <!-- / -->
+                <!-- <a href="projects/ppf/IFM_Digit_arxiv.pdf">Paper</a> -->
                 <p></p>
                 <p>
-                  We introduce a guided unsupervised reinforcement learning framework that simultaneously learns robot skills and their correspondence to human motions.
+                  This paper presents a novel approach that combines the advantages of both model-based and learning-based frameworks to achieve robust locomotion. The residual modules are integrated with each corresponding part of the model-based framework, a footstep planner and dynamic model designed using heuristics, to complement performance degradation caused by a model mismatch. By utilizing a modular structure and selecting the appropriate learning-based method for each residual module, our framework demonstrates improved control performance in environments with high uncertainty, while also achieving higher learning efficiency compared to baseline methods. 
                 </p>
               </td>
             </tr>
-            
-            <tr onmouseout="ifm_stop()" onmouseover="ifm_start()">
+                        
+                                    <tr onmouseout="hopper_humanoid_stop()" onmouseover="hopper_humanoid_start()">
               <td style="padding:20px;width:25%;vertical-align:top">
                 <div class="one">
-                  <div class="two" id='ifm_image'><video  width=100% height=100% muted autoplay loop>
-                  <source src="project_teasers/IFM_teaser/teaser.mp4" type="video/mp4">
+                  <div class="two" id='humanoid_image'><video  width=100% height=100% muted autoplay loop>
+                  <source src="project_teasers/4_hopper_humanoid/teaser.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video></div>
-                  <img src='project_teasers/IFM_teaser/IFM_teaser.png' width="160">
+                  <img src='project_teasers/4_hopper_humanoid/teaser.png' width="160">
                 </div>
                 <script type="text/javascript">
-                  function ifm_start() {
-                    document.getElementById('ifm_image').style.opacity = "1";
+                  function hopper_humanoid_start() {
+                    document.getElementById('humanoid_image').style.opacity = "1";
                   }
-
-                  function ifm_stop() {
-                    document.getElementById('ifm_image').style.opacity = "0";
+      
+                  function hopper_humanoid_stop() {
+                    document.getElementById('humanoid_image').style.opacity = "0";
                   }
-                  ifm_stop()
+                  hopper_humanoid_stop()
                 </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top">
-                <a href="projects/ifm/ifm.html">
-                  <span class="papertitle">Imitating and Finetuning Model Predictive Control for Robust and Symmetric Quadrupedal Locomotion</span>
-                </a>
+                  <span class="papertitle">Design of a 3-DOF Hopping Robot with an Optimized Gearbox: An Intermediate Platform Toward Bipedal Robots</span>
                 <br>
-                Donghoon Youm*,
-                <strong>Hyunyoung Jung*</strong>,
-                Hyeongjun Kim,
-                <a href="https://www.railab.kaist.ac.kr/">Jemin Hwangbo</a>,  <br>
-                <a href="https://www.dynamicrobot.kaist.ac.kr/">Hae-Won Park</a>,
-                <a href="https://faculty.cc.gatech.edu/~sha9/">Sehoon Ha</a>
+                JongHun Choe,
+                Gijeong Kim,
+                <strong>Hajun Kim</strong>, 
+                Dongyun Kang,
+                Min-Su Kim,
+                <a href="https://scholar.google.com/citations?user=q7v_ewQAAAAJ&hl=en&oi=ao">Hae-Won Park</a>
                 <br>
-                <em>RA-L</em>, 2023
+                <em>IEEE-RAS 24th International Conference on Humanoid Robots</em>, 2025, <strong>Best Oral Paper Award</strong>
                 <br>
-                <a href="projects/ifm/ifm.html">project page</a>
+                <a href="https://www.youtube.com/watch?v=FNzdKXl-jj0&t=11s">video</a>
                 /
-                <a href="https://youtu.be/KmL7mlGBkys">video</a>
-                /
-                <a href="https://arxiv.org/abs/2311.02304">arXiv</a>
+                <a href="https://arxiv.org/abs/2505.12231">arXiv</a>
+                <!-- / -->
+                <!-- <a href="projects/ppf/IFM_Digit_arxiv.pdf">Paper</a> -->
                 <p></p>
                 <p>
-                  We propose a learning framework that can bridge between model-based and learning-based approaches for legged robot control by imitating expert model predictive control (MPC) and fine-tuning the pre-trained policy with reinforcement learning.
+                 This paper presents a 3-DOF hopping robot with a human-like lower-limb joint configuration and a flat foot, capable of performing dynamic and repetitive jumping motions. To achieve both high torque output and a large hollow shaft diameter for efficient cable routing, a compact 3K compound planetary gearbox was designed using mixed-integer nonlinear programming for gear tooth optimization. To meet performance requirements within the constrained joint geometry, all major components-including the actuator, motor driver, and communication interface-were custom-designed. A reinforcement learning-based controller was employed, and robot's performance was validated through hardware experiments, demonstrating stable and repetitive hopping motions in response to user inputs. 
                 </p>
               </td>
             </tr>
+                              
+ 
+                        
+                                    <tr onmouseout="hopper_corl_stop()" onmouseover="hopper_corl_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <div class="two" id='corl_image'><video  width=100% height=100% muted autoplay loop>
+                  <source src="project_teasers/5_hopper_corl/teaser.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='project_teasers/5_hopper_corl/teaser.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function hopper_corl_start() {
+                    document.getElementById('corl_image').style.opacity = "1";
+                  }
       
-      
+                  function hopper_corl_stop() {
+                    document.getElementById('corl_image').style.opacity = "0";
+                  }
+                  hopper_corl_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                  <span class="papertitle">Learning Impact-Rich Rotational Maneuvers via Centroidal Velocity Rewards and Sim-to-Real Techniques: A One-Leg Hopper Flip Case Study</span>
+                <br>
+                Dongyun Kang,
+                Gijeong Kim,
+                JongHun Choe,
+                <strong>Hajun Kim</strong>, 
+                <a href="https://scholar.google.com/citations?user=q7v_ewQAAAAJ&hl=en&oi=ao">Hae-Won Park</a>
+                <br>
+                <em>Conference on Robot Learning</em>, 2025.
+                <br>
+                <a href="https://www.youtube.com/watch?v=FNzdKXl-jj0&t=11s">video</a>
+                /
+                <a href="https://arxiv.org/abs/2505.12231">arXiv</a>
+                <!-- / -->
+                <!-- <a href="projects/ppf/IFM_Digit_arxiv.pdf">Paper</a> -->
+                <p></p>
+                <p>
+                 Dynamic rotational maneuvers, such as front flips, inherently involve large angular momentum generation and intense impact forces, presenting major challenges for reinforcement learning and sim-to-real transfer. In this work, we propose a general framework for learning and deploying impact-rich, rotation-intensive behaviors through centroidal velocity-based rewards and actuator-aware sim-to-real techniques. We identify that conventional link-level reward formulations fail to induce true whole-body rotation and introduce a centroidal angular velocity reward that accurately captures system-wide rotational dynamics. To bridge the sim-to-real gap under extreme conditions, we model motor operating regions (MOR) and apply transmission load regularization to ensure realistic torque commands and mechanical robustness.
+                </p>
+              </td>
+            </tr>                              
 
           </tbody></table>
 
@@ -273,97 +354,37 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto; margin-top:-25px"><tbody>
             <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
               <td style="padding:0px 10px 20px 23px;vertical-align:top">
-                <h3 style="line-height: 0.5;" > Georgia Institute of Technology </h3>
-                <em>Ph.D. in Robotics</em>
+                <h3 style="line-height: 0.5;" > Korea Advanced Institute of Science & Technology (KAIST) </h3>
+                <em>Ph.D. in Mechanical Engineering</em>
               </td>
               <td style="padding:10px;width:35%;vertical-align:top">
-                <em>Aug. 2024 - Present</em>
+                <em>Mar. 2022 - Present</em>
               </td>
             </tr>
 
             <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
               <td style="padding:0px 10px 20px 23px;vertical-align:top">
-                <h3 style="line-height: 0.5;" > Georgia Institute of Technology </h3>
-                <em>M.S in Electrical and Computer Engineering</em>
+                <h3 style="line-height: 0.5;" > Korea Advanced Institute of Science & Technology (KAIST) </h3>
+                <em>M.S in Mechanical Engineering</em>
               </td>
               <td style="padding:10px;width:35%;vertical-align:top">
-                <em>Aug. 2022 - May. 2024</em>
+                <em>Mar. 2020 - Feb. 2022</em>
               </td>
             </tr>
       
             <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
               <td style="padding:0px 10px 20px 23px;width:65%;vertical-align:top">
-                <h3 style="line-height: 0.5;"> Seoul National University </h3>
-                <em>B.S. in Mechanical Engineering</em>
-                <br>
-                <em>B.S. in Computer Science and Engineering</em>
+                <h3 style="line-height: 0.5;"> Yonsei University </h3>
+                <em>B.S. in Mechanical Engineering, Ranked 1st upon graduation</em>
               </td>
               <td style="padding:10px;width:35%;vertical-align:top">
-                <em>Mar. 2016 - Aug. 2022</em>
+                <em>Mar. 2014 - Feb. 2020</em>
               </td>
             </tr>
 
       
           </tbody></table>
 
-          <table>
-            <tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle; line-height:10px">
-                    <h2>Work and Teaching Experiences</h2><br>
-                </td>
-            </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto; margin-top:-25px"><tbody>
-            <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
-              <td style="padding:0px 10px 20px 23px;width:65%;vertical-align:top">
-                <h3 style="line-height: 0.5;"> CS 8803 Deep Reinforcment Learning for Intel. Control</h3>
-                <em>Teaching Asistant</em>
-                <br>
-                <em>Georgia Institute of Technology</em>
-              </td>
-              <td style="padding:10px;width:35%;vertical-align:top">
-                <em>Spring 2024</em>
-              </td>
-            </tr>
-            <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
-              <td style="padding:0px 10px 20px 23px;width:65%;vertical-align:top">
-                <h3 style="line-height: 0.5;"> CS 3451 Computer Graphics </h3>
-                <em>Teaching Asistant</em>
-                <br>
-                <em>Georgia Institute of Technology</em>
-              </td>
-              <td style="padding:10px;width:35%;vertical-align:top">
-                <em>Spring 2023</em>
-              </td>
-            </tr>
-
-            <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
-              <td style="padding:0px 10px 20px 23px;width:65%;vertical-align:top">
-                <h3 style="line-height: 0.5;"> Saige Research </h3>
-                <em>Research Intern</em>
-              </td>
-              <td style="padding:10px;width:35%;vertical-align:top">
-                <em>Apr. 2021 - Dec. 2021</em>
-              </td>
-            </tr>
-      
-            <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
-              <td style="padding:0px 10px 20px 23px;width:65%;vertical-align:top">
-                <h3 style="line-height: 0.5;"> Samsung Electronics </h3>
-                <em>Student Intern</em>
-              </td>
-              <td style="padding:10px;width:35%;vertical-align:top">
-                <em>Jan. 2021 - Feb. 2021</em>
-              </td>
-            </tr>
-
-      
-          </tbody></table>
-            
-          </tbody></table>
       
     
 
